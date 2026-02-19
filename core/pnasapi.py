@@ -67,3 +67,7 @@ class PnasAPI:
             "path": str(file_path),
             "size": file_path.stat().st_size
         }
+    
+    def rename_file(self, relative_path: str, new_file_name: str):
+        full_path = self.get_safe_path(relative_path)
+        return fo.rename_file(full_path, new_file_name)
