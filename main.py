@@ -20,3 +20,7 @@ async def upload(file: UploadFile = File(...), relative_path: str = Form("")):
 @app.patch("/rename/{file_path:path}")
 def rename(file_path: str, request: RenameRequest):
     return api.rename_file(file_path, request.new_name)
+
+@app.delete("/delete/{file_path:path}")
+def delete_file(file_path: str):
+    return api.delete_file(file_path)

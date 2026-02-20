@@ -71,3 +71,8 @@ class PnasAPI:
     def rename_file(self, relative_path: str, new_file_name: str):
         full_path = self.get_safe_path(relative_path)
         return fo.rename_file(full_path, new_file_name)
+
+    def delete_file(self, relative_path: str = ""):
+        full_path = self.get_safe_path(relative_path)
+        print(relative_path)
+        return fo.delete_file(full_path)
