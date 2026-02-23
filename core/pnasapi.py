@@ -74,5 +74,4 @@ class PnasAPI:
 
     def delete_file(self, relative_path: str = ""):
         full_path = self.get_safe_path(relative_path)
-        print(relative_path)
         return fo.delete_file(full_path)

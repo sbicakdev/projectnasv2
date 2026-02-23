@@ -1,2 +1,2 @@
 # Your base path in your local server, for example /home/yourusername/projects/server
-basepath=/home/cheeseplayz/Documents/projectnas/drive
+basepath=housedrive
